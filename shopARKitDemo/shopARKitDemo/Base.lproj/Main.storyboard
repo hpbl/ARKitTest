@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="ViewController" customModule="shopARKitDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ggr-aa-a98">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0hs-hv-cVc">
+                                <rect key="frame" x="19" y="76.5" width="337.5" height="534"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="0hs-hv-cVc" firstAttribute="centerY" secondItem="r50-hC-7aM" secondAttribute="centerY" id="VL5-aD-S80"/>
+                            <constraint firstItem="0hs-hv-cVc" firstAttribute="height" secondItem="ggr-aa-a98" secondAttribute="height" multiplier="0.8" id="Xcx-br-9sY"/>
+                            <constraint firstItem="0hs-hv-cVc" firstAttribute="width" secondItem="ggr-aa-a98" secondAttribute="width" multiplier="0.9" id="aKT-IH-X2s"/>
+                            <constraint firstItem="0hs-hv-cVc" firstAttribute="centerX" secondItem="r50-hC-7aM" secondAttribute="centerX" id="oRT-Vz-dur"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="r50-hC-7aM"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="0hs-hv-cVc" id="Rah-Wo-rQi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
